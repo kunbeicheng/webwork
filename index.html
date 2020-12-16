@@ -4,13 +4,13 @@
 		<meta charset="UTF-8">
 		<title>印象师大</title>
 		<link rel="icon" type="image/png" href="logo2.png"/>
-		<link rel="stylesheet" type="text/css" href="work.css"/>
+		<link rel="stylesheet" type="text/css" href="work.css"/>	
 	</head>
 	<body>
         <div class="header-top fix">
         	<ul>
         		<li><a href="#">投稿</a></li>
-        		<li><a href="#biaodan">登录/注册</a></li>
+        		<li><a href="#" id="logn">登录/注册</a></li>
         	</ul>
         </div>
 		<div class="nav1 fix">
@@ -22,10 +22,10 @@
 						<div class="erji fix">
 							<!--点击即可跳转到相应位置-->
 							<ul>
-								<li><a href="#chun">师大·春 >></a></li>
-								<li><a href="#xia">师大·夏 >></a></li>
-								<li><a href="#qiu">师大·秋 >></a></li>
-								<li><a href="#dong">师大·冬 >></a></li>
+								<li><a href="#chun" class="hehe">师大·春 >></a></li>
+								<li><a href="#xia" class="hehe">师大·夏 >></a></li>
+								<li><a href="#qiu" class="hehe">师大·秋 >></a></li>
+								<li><a href="#dong" class="hehe">师大·冬 >></a></li>
 							</ul>
 						</div>
 					</li>
@@ -57,7 +57,7 @@
 				<input type="text" placeholder="输入关键词搜索" class="search"/>
 				<input type="button" class="submit"/>
 			</form>
-			<p class="fou"><a href="#">软件学院</a></p>
+			<p class="fou"><a href="http://software.hebtu.edu.cn/">软件学院</a></p>
 		</div>
 		<div class="banner">
 			<div class="banner-item"></div>
@@ -71,7 +71,7 @@
 		<div class="jijie fix">
 			<p id="chun">师大·春</p>
 			<div class="total">
-				<p><a href="#">查看全部>></a></p>
+				<p><a href="http://www.hebtu.edu.cn/a/sdxb/xxgk/xyfg/index.html">查看全部>></a></p>
 			</div>
 		</div>
 		<div class="photo fix">
@@ -88,7 +88,7 @@
 		<div class="jijie">
 			<p id="xia">师大·夏</p>
 			<div class="total">
-				<p><a href="#">查看全部>></a></p>
+				<p><a href="http://www.hebtu.edu.cn/a/sdxb/xxgk/xyfg/index.html">查看全部>></a></p>
 			</div>
 		</div>
 		<div class="photo fix">
@@ -105,7 +105,7 @@
 		<div class="jijie">
 			<p id="qiu">师大·秋</p>
 			<div class="total">
-				<p><a href="#">查看全部>></a></p>
+				<p><a href="http://www.hebtu.edu.cn/a/sdxb/xxgk/xyfg/index.html">查看全部>></a></p>
 			</div>
 		</div>
 		<div class="photo fix">
@@ -122,7 +122,7 @@
 		<div class="jijie">
 			<p id="dong">师大·冬</p>
 			<div class="total">
-				<p><a href="#">查看全部>></a></p>
+				<p><a href="http://www.hebtu.edu.cn/a/sdxb/xxgk/xyfg/index.html">查看全部>></a></p>
 			</div>
 		</div>
 		<div class="photo fix">
@@ -142,7 +142,7 @@
 		<div id="top">
 			<a href="#">返回顶部</a>
 		</div>	
-		<form action="#" method="post" id="biaodan">
+		<form id="biaodan">
 			<!--登录框滑过bananer图后隐藏-->
 			<table border="0" cellspacing="0" cellpadding="2" align="center" width="220px">
 				<tr><td colspan="2" rowspan="2" id="jihao">印象师大</td></tr>
@@ -157,8 +157,17 @@
 					<td align="left"><input type="password" class="kuan" name="password" /></td>
 				</tr>
 			</table>
-			<input type="submit" id="login" value="登录"/>
-			<p>没有账号？点击 <a href="#">"注册"</a></p>
+			<input type="button" id="login" value="登录"/>
+			<p>没有账号？点击 <a href="#" id="bianhuan">"注册"</a></p>
+		</form>
+		<form method="get" class="shabi" onsubmit="return check(this)">
+			<br /><br />
+			<div class="laizhi"><span class="laozi">&nbsp;&nbsp;&nbsp;&nbsp;账号：</span><input type="text" name="name" class="laizi" id="name" placeholder="账号" /><br /></div>
+			<div class="laizhi"><span class="laozi">&nbsp;&nbsp;&nbsp;&nbsp;密码：</span><input type="password" name="pwd1" class="laizi" id="pwd1" placeholder="输入密码" /><br /></div>						
+			<div class="laizhi"><span class="laozi">&nbsp;&nbsp;&nbsp;&nbsp;确认：</span><input type="password" name="pwd2" class="laizi" id="pwd2" placeholder="确认密码" /><br />	</div>					
+			<br />
+			<input type="submit" value="提交" class="mit" />
 		</form>
 	</body>
+	<script src="works.js" type="text/javascript" charset="utf-8"></script>
 </html>
